@@ -12,7 +12,7 @@ http://127.0.0.1:3000
 
 | HTTP METHOD |       End Point       |    Description     |
 | :---------: | :-------------------: | :----------------: |
-|    POST     |     /account/user     |      회원가입      |
+|    POST     | /auth/kakao/callback  |  Kakao 리다이랙트  |
 |    POST     |    /account/login     |       로그인       |
 |     GET     |      /post/feed       |     피드 조회      |
 |     GET     |    /account/mypage    |  마이페이지 조회   |
