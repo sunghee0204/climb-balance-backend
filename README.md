@@ -2,24 +2,95 @@
 
 ⭐️ Software Maestro 13th project ⭐️
 
+### 📌 Task
+
+- [+] Connect Mongodb
+- [+] Loacl JWT API
+- [+] Social Login API
+- [ ] Video Upload API
+- [ ] Video Streaming API
+
 ### 🚨 Local Server URL (Server Host) 🚨
 
 ```text
-http://127.0.0.1:3000
+http://54.180.155.137:3000
 ```
 
 ### 🌸 Overview
 
-| HTTP METHOD |       End Point       |    Description     |
-| :---------: | :-------------------: | :----------------: |
-|    POST     | /auth/kakao/callback  |  Kakao 리다이랙트  |
-|    POST     |    /account/login     |       로그인       |
-|     GET     |      /post/feed       |     피드 조회      |
-|     GET     |    /account/mypage    |  마이페이지 조회   |
-|     GET     | /post/detail/:post_id | 게시글 상세 페이지 |
+| HTTP METHOD |  End Point  |  Description  |
+| :---------: | :---------: | :-----------: |
+|     GET     | /auth/naver |  Naver Login  |
+|     GET     |   /token    | token Refresh |
+|     GET     |    /user    | Get User Data |
 
-### 📌 Task
+---
 
-- [ ] Social Login API
-- [ ] Video Upload API
-- [ ] Video Streaming API
+#### 🧡 Naver Login
+
+##### 📌 Request Body
+
+```json
+{}
+```
+
+##### 📌 Server Response
+
+```json
+{
+    {"success":true,"access_token":"random_access_token","refresh_token":"random_refresh_token"}
+}
+```
+
+---
+
+#### 🧡 Token Refresh
+
+##### 📌 Request Body
+
+```json
+{
+  "refresh_token": "random_refresh_token"
+}
+```
+
+##### 📌 Server Response
+
+```json
+{
+    {"success":true,"access_token":"random_access_token","refresh_token":"random_refresh_token"}
+}
+```
+
+---
+
+#### 🧡 Get User Data
+
+##### 📌 Request Body
+
+```json
+{
+  "Authorization": "bearer random_access_token"
+}
+```
+
+##### 📌 Server Response
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "62cd2d591fe4da1648aae3e2",
+      "id": "X4c_JL0IizyCUnXaYPZ95t2REfHMG4h2_7oK7TBvH0c",
+      "email": "elon@tesla.com",
+      "sex": null,
+      "access_token": "random_access_token",
+      "refresh_token": "random_refresh_token",
+      "createdAt": "2022-07-12T08:14:17.173Z",
+      "updatedAt": "2022-07-12T08:43:43.523Z",
+      "__v": 0
+    }
+  ]
+}
+```
