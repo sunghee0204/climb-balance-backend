@@ -38,7 +38,9 @@ http://54.180.155.137:3000
 
 ```json
 {
-    {"success":true,"access_token":"random_access_token","refresh_token":"random_refresh_token"}
+  "success": true,
+  "access_token": "random_access_token",
+  "refresh_token": "random_refresh_token"
 }
 ```
 
@@ -58,7 +60,9 @@ http://54.180.155.137:3000
 
 ```json
 {
-    {"success":true,"access_token":"random_access_token","refresh_token":"random_refresh_token"}
+  "success": true,
+  "access_token": "random_access_token",
+  "refresh_token": "random_refresh_token"
 }
 ```
 
@@ -66,7 +70,7 @@ http://54.180.155.137:3000
 
 #### 🧡 Get User Data
 
-##### 📌 Request Body
+##### 📌 Request Header
 
 ```json
 {
