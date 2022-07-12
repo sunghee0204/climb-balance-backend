@@ -31,7 +31,8 @@ http://54.180.155.137:3000
 ##### 📌 Request Body
 
 ```json
-{}
+{
+}
 ```
 
 ##### 📌 Server Response
