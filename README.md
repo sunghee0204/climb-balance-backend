@@ -4,9 +4,9 @@
 
 ### 📌 Task
 
-- [-] Connect Mongodb
-- [-] Loacl JWT API
-- [-] Social Login API
+- [x] Connect Mongodb
+- [x] Loacl JWT API
+- [x] Social Login API
 - [ ] Video Upload API
 - [ ] Video Streaming API
 
