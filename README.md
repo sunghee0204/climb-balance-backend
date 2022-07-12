@@ -2,8 +2,6 @@
 
 ⭐️ Software Maestro 13th project ⭐️
 
----
-
 ### 📌 Task
 
 - [x] Connect Mongodb
@@ -12,7 +10,6 @@
 - [ ] Video Upload API
 - [ ] Video Streaming API
 
----
 
 ### 🚨 Local Server URL (Server Host) 🚨
 
@@ -20,7 +17,6 @@
 http://54.180.155.137:3000
 ```
 
----
 
 ### 🌸 Overview
 
